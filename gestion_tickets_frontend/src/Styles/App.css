@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina los rellenos predeterminados */
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto total */
+  font-family: 'Arial', sans-serif; /* Establece la fuente por defecto */
+}
+
+/* Fondo general con imagen */
+body {
+  background: url('/src/assets/background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+  background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+  color: #ffffff; /* Color de texto blanco */
+  display: flex; /* Usa Flexbox para alinear contenido */
+  flex-direction: column; /* Dirección de los elementos hijos en columna */
+  align-items: center; /* Centra los hijos horizontalmente */
+  justify-content: center; /* Centra los hijos verticalmente */
+  min-height: 100vh; /* Altura mínima del cuerpo igual a la altura de la ventana */
+  text-align: center; /* Centra el texto */
+}
+
+/* Contenedor principal con transparencia */
+.container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 600px; /* Máximo ancho del contenedor */
+  background: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  margin-top: 50px; /* Separación superior */
+}
+
+/* Navbar estilizado */
+nav {
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+  padding: 15px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido del navbar */
+}
+
+nav ul {
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+  display: flex; /* Muestra los elementos de la lista en línea con flexbox */
+  justify-content: center; /* Centra los elementos */
+  gap: 20px; /* Espaciado entre elementos */
+  padding: 0; /* Elimina el relleno */
+}
+
+nav a {
+  color: white; /* Color del texto blanco */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Relleno del botón/enlace */
+  background: rgba(255, 255, 255, 0.2); /* Fondo claro con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background 0.3s; /* Transición suave del fondo al hacer hover */
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.4); /* Fondo más claro al pasar el cursor */
+}
+
+/* Footer */
+footer {
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: rgba(43, 39, 39, 0.8); /* Fondo oscuro con transparencia */
+  color: white; /* Color del texto blanco */
+  text-align: center; /* Centra el contenido */
+  padding: 15px 0; /* Espaciado superior e inferior */
+  margin-top: 20px; /* Separación con respecto al contenido */
+  position: fixed; /* Fija el footer al fondo de la pantalla */
+  bottom: 0; /* Alineado al borde inferior */
+}
+
+/* Botones */
+button {
+  background: #ff9800; /* Color de fondo naranja */
+  color: white; /* Color del texto blanco */
+  padding: 12px 18px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  transition: background 0.3s, transform 0.2s; /* Transiciones suaves en hover */
+}
+
+button:hover {
+  background: #e68900; /* Color más oscuro al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}

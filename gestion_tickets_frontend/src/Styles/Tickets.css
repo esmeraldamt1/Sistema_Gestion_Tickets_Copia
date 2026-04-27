@@ -1,0 +1,64 @@
+/* Contenedor principal del formulario de ticket */
+.ticket-container {
+  width: 450px;                           /* Ancho fijo del formulario */
+  margin: 50px auto;                      /* Margen vertical y centrado horizontal */
+  padding: 20px;                          /* Espacio interior alrededor del contenido */
+  background: rgba(0, 0, 0, 0.7);         /* Fondo negro semitransparente */
+  color: white;                           /* Texto blanco */
+  border-radius: 10px;                    /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra alrededor del contenedor */
+  text-align: left;                       /* Alineación del texto hacia la izquierda */
+}
+
+/* Título principal */
+h2 {
+  text-align: center;                     /* Centra el texto del encabezado */
+}
+
+/* Agrupación de cada input y su etiqueta */
+.input-group {
+  margin-bottom: 15px;                    /* Espacio inferior entre cada campo */
+}
+
+/* Estilo para todas las etiquetas de input */
+.input-group label {
+  display: block;                         /* Hace que cada etiqueta ocupe toda la línea */
+  font-weight: bold;                      /* Texto en negrita */
+  margin-bottom: 5px;                     /* Espacio entre etiqueta e input */
+}
+
+/* Estilos para todos los inputs, selects y textareas */
+.input-group select,
+.input-group input,
+.input-group textarea {
+  width: 100%;                            /* Ocupa todo el ancho disponible */
+  padding: 8px;                           /* Espaciado interno para comodidad */
+  border-radius: 5px;                     /* Bordes suavemente redondeados */
+  border: none;                           /* Sin bordes visibles */
+  font-size: 16px;                        /* Tamaño de letra estándar */
+}
+
+/* Ajuste específico para los textarea */
+.input-group textarea {
+  height: 80px;                           /* Altura fija del área de texto */
+  resize: none;                           /* Desactiva redimensionamiento manual */
+}
+
+/* Estilo general del botón */
+button {
+  width: 100%;                            /* Ancho completo */
+  background-color: orange;              /* Fondo naranja */
+  color: white;                           /* Texto blanco */
+  padding: 10px;                          /* Espaciado interno */
+  border: none;                           /* Sin borde */
+  border-radius: 5px;                     /* Bordes redondeados */
+  cursor: pointer;                        /* Cursor tipo mano al pasar */
+  font-size: 18px;                        /* Texto más grande */
+  display: block;         /* Para que respete el ancho */
+  margin: 1.5rem auto 0;  /* Centrado automático con margen superior */
+}
+
+/* Efecto al pasar el cursor por encima del botón */
+button:hover {
+  background-color: darkorange;          /* Cambia el fondo a un tono más oscuro */
+}

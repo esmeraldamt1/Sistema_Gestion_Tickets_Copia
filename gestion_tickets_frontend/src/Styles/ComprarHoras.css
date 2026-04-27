@@ -1,0 +1,96 @@
+/* Contenedor principal del componente Comprar Horas */
+.comprar-horas-container {
+  max-width: 450px;           /* Aumenta el ancho visual, ajusta a gusto */
+  width: 90vw;                /* Aumenta un poco el ancho relativo */
+  margin: 40px auto;          /* Centrado y más espacio superior/inferior */
+  padding: 30px 40px;         /* Más padding lateral para separación interna */
+  background: rgba(75, 71, 71, 0.7); /* Fondo oscuro con transparencia */
+  border-radius: 12px;        /* Bordes más suaves */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25); /* Sombra más visible */
+
+  display: flex;                /* Activa Flexbox, un sistema de diseño que permite organizar los elementos hijos de manera flexible */
+  flex-direction: column;      /* Organiza los elementos hijos en una columna (de arriba hacia abajo) */
+  gap: 20px;                   /* Establece un espacio de 20 píxeles entre cada elemento hijo (espaciado vertical) */
+  text-align: center;          /* Centra horizontalmente el texto dentro del contenedor */
+
+}
+
+/* Encabezado (título) */
+h2 {
+  margin-bottom: 10px; /* Espacio inferior */
+  text-align: center; /* Centra el texto */
+}
+
+/* Contenedor de cada grupo de entrada (label + input) */
+.input-group {
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Organiza verticalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  align-items: center; /* Centra los inputs horizontalmente */
+}
+
+/* Estilo para las etiquetas de los inputs */
+.input-group label {
+  font-weight: bold; /* Negrita */
+  margin-bottom: 6px; /* Espacio debajo del label */
+  align-self: flex-start; /* Alinea el label a la izquierda */
+}
+
+/* Estilo para los campos de entrada */
+input {
+  width: 280px; /* Ancho fijo */
+  max-width: 100%; /* Se adapta en pantallas pequeñas */
+  padding: 8px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho */
+  margin: 0 auto; /* Centra el input horizontalmente */
+}
+
+/* Estilo base para los botones */
+.btn {
+  width: 280px; /* Ancho fijo */
+  max-width: 100%; /* Se adapta en móviles */
+  padding: 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  font-size: 16px; /* Tamaño de texto */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho */
+  margin: 0 auto 10px auto; /* Centra el botón y añade espacio inferior */
+}
+
+/* Estilo específico para el botón de comprar */
+.comprar {
+  background-color: orange; /* Fondo naranja */
+  color: rgb(255, 255, 255); /* Texto blanco */
+}
+
+/* Tabla de historial de compras */
+.compras-lista table {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Elimina espacio entre bordes */
+  margin-top: 10px; /* Espacio superior */
+  color: white; /* Texto blanco */
+  background-color: rgba(255, 255, 255, 0.05); /* Fondo ligeramente blanco con transparencia */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+/* Celdas y encabezados de la tabla */
+.compras-lista th,
+.compras-lista td {
+  padding: 10px; /* Espaciado interno */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria con transparencia */
+  text-align: center; /* Centra el contenido */
+}
+
+/* Encabezado de la tabla */
+.compras-lista th {
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo más claro para destacar */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Fila resaltada al pasar el cursor */
+.compras-lista tr:hover {
+  background-color: rgba(245, 240, 240, 0.08); /* Color de fondo al hacer hover */
+}

@@ -1,0 +1,133 @@
+/* Contenedor general */
+.saldo-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Ancho máximo para que no se extienda demasiado */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 40px; /* Espaciado interno */
+  background: rgba(75, 71, 71, 0.7); /* Fondo oscuro con transparencia */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0px 4px 15px rgb(243, 242, 242); /* Sombra clara para resaltar el contenedor */
+  display: flex; /* Flexbox para organizar los hijos */
+  flex-direction: column; /* Dirección vertical */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Títulos en blanco */
+.saldo-container h1,
+.saldo-container h2,
+.saldo-container h3 {
+  color: white; /* Color blanco para los textos */
+  text-align: center; /* Centra los títulos */
+}
+
+/* Grupo de inputs (etiqueta + campo) */
+.input-group {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: flex-start; /* Alinea al inicio horizontalmente */
+}
+
+/* Estilo de etiquetas de los inputs */
+.input-group label {
+  color: white; /* Texto blanco */
+  font-size: 16px; /* Tamaño de fuente estándar */
+  margin-bottom: 8px; /* Espacio inferior */
+}
+
+/* Estilo de los campos de entrada */
+.input-group input {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 12px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+/* Botón por defecto (naranja) */
+.btn {
+  font-size: 18px; /* Tamaño de fuente grande */
+  padding: 12px; /* Espaciado interno */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  background-color: orange; /* Fondo naranja */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 6px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  transition: background-color 0.2s ease-in-out; /* Transición suave al hacer hover */
+  display: block;         /* Para que respete el ancho */
+  margin: 1.5rem auto 0;  /* Centrado automático con margen superior */
+}
+
+/* Cambio de color cuando se pasa el mouse sobre el botón */
+.btn:hover {
+  background-color: darkorange; /* Naranja más oscuro */
+}
+
+/* Botón azul: consultar saldo */
+.consultar-saldo {
+  background-color: #007bff; /* Azul */
+}
+
+/* Hover para el botón azul */
+.consultar-saldo:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Mensaje centrado y en blanco */
+.mensaje {
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Centra el texto */
+}
+
+/* Título uniforme para secciones de historial */
+.titulo-historial {
+  color: white;          /* Igual que el resto de títulos */
+  text-align: center;      /* Centrado */
+  font-size: 20px;         /* Tamaño uniforme */
+  margin-bottom: 10px;     /* Espaciado inferior */
+  font-weight: bold;       /* Negrita */
+}
+/* Tabla de historial de movimientos */
+.tabla-movimientos {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tabla-movimientos table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-movimientos th,
+.tabla-movimientos td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tabla-movimientos th {
+  background-color: rgba(255, 255, 255, 0.15);
+  font-weight: bold;
+}
+
+.tabla-movimientos tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Título centrado y elegante */
+.titulo-historial {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+

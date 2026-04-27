@@ -1,0 +1,23 @@
+/* Contenedor principal del panel */
+.panel-container {
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 50px; /* Espaciado interno */
+  background: rgba(61, 58, 58, 0.7); /* Fondo oscuro con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 350px; /* Ancho fijo del panel */
+}
+
+/* Estilos globales para todos los botones */
+button {
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  padding: 15px; /* Espaciado interno */
+  margin: 10px; /* Margen alrededor del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  background-color: #ff7300; /* Color de fondo naranja */
+}
+
+/* Estilo compartido para los títulos */
+.titulo, .subtitulo {
+  color: white; /* Texto en blanco */
+}

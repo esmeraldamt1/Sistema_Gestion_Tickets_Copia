@@ -1,0 +1,53 @@
+/* src/pages/Register.css */
+
+/* Estilo para la página de registro */
+.register-page {
+  min-height: 100vh; /* Altura mínima de la ventana completa */
+  display: flex; /* Usa Flexbox para alinear contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background: url('./assets/background.jpg') no-repeat center center; /* Imagen de fondo centrada */
+  background-size: cover; /* Cubre toda la pantalla sin deformarse */
+}
+
+/* Contenedor del formulario de autenticación */
+.auth-container {
+  width: 350px; /* Ancho fijo del formulario */
+  padding: 30px; /* Espaciado interno */
+  background: rgba(61, 58, 58, 0.7); /* Fondo oscuro con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  color: white; /* Color del texto */
+  text-align: center; /* Centra el contenido del texto */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidad */
+}
+
+/* Estilos para los campos de entrada */
+.auth-input {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 12px; /* Espaciado interno */
+  margin: 10px 0; /* Margen arriba y abajo */
+  border: none; /* Sin borde */
+  border-radius: 6px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Estilos para el botón de enviar */
+.auth-button {
+  width: 50%; /* Ancho relativo al contenedor */
+  padding: 12px; /* Espaciado interno */
+  background-color: #ff6a00; /* Color de fondo naranja */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  margin: 10px; /* Margen alrededor del botón */
+  display: block;
+  margin: 1.5rem auto 0;
+
+}
+
+/* Estilo para el botón cuando el cursor pasa por encima */
+.auth-button:hover {
+  background-color: #e65c00; /* Color de fondo más oscuro al hacer hover */
+}

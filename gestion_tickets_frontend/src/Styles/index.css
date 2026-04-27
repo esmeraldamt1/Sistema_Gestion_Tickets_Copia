@@ -1,0 +1,13 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo general sin afectar las páginas */
+body {
+  background-color: #f4f4f4;
+  color: #000;
+}

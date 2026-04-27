@@ -1,0 +1,113 @@
+/* Contenedor general */
+.container {
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 40px; /* Espaciado alrededor del contenido */
+}
+
+/* Contenido principal */
+.content {
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro y translúcido original */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Título principal */
+.title {
+  text-align: center; /* Centrado */
+  font-size: 24px; /* Tamaño de letra */
+  font-weight: bold; /* Negrita */
+  color: white; /* Color de texto */
+  margin-bottom: 20px; /* Espacio con los filtros */
+}
+
+/* Sección de filtros */
+.filter-section {
+  display: flex; /* Alineación horizontal */
+  flex-direction: column; /* Alineación vertical como en el estilo original */
+  gap: 10px; /* Espacio entre los campos */
+  align-items: center; /* Centrado horizontal */
+  margin-bottom: 20px; /* Espaciado con los botones */
+}
+
+/* Campos de entrada y selectores */
+.input-field {
+  padding: 10px; /* Espaciado interno */
+  border-radius: 6px; /* Bordes redondeados */
+  border: none; /* Sin borde */
+  width: 100%; /* Ocupar todo el ancho del contenedor */
+  font-size: 14px; /* Tamaño de letra adecuado */
+  max-width: 300px; /* Limita el ancho para mantener el diseño compacto */
+}
+
+/* Sección de botones */
+.button-section {
+  display: flex; /* Alineación horizontal */
+  justify-content: center; /* Centrado horizontal */
+  gap: 10px; /* Espacio entre botones */
+  margin-bottom: 20px; /* Espaciado con la tabla */
+}
+
+/* Botón de filtro */
+.filter-button {
+  background-color: #2196f3; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px; /* Tamaño de letra */
+}
+
+/* Botón de exportar */
+.export-button {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px; /* Tamaño de letra */
+}
+
+/* Tabla estilizada */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Colapsa bordes */
+  background-color: rgba(255, 255, 255, 0.05); /* Fondo claro y translúcido */
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 13px; /* Letra más pequeña para que no se desborde */
+  margin-top: 20px; /* Espacio superior respecto a botones */
+}
+
+/* Encabezados de la tabla */
+.table thead {
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo más marcado */
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 12px; /* Espaciado interno */
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+}
+
+/* Hover en filas */
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.08); /* Efecto al pasar el cursor */
+}
+
+/* Texto de "No hay datos" */
+.no-data {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 14px; /* Letra coherente con el resto del contenido */
+}

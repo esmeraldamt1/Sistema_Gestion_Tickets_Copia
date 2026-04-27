@@ -1,0 +1,93 @@
+/* Contenedor principal del login */
+.login-container {
+  display: flex; /* Utiliza flexbox para alinear el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Estilos para el formulario de login */
+.login-form {
+  background: rgba(61, 58, 58, 0.7); /* Fondo semi-transparente oscuro */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 350px; /* Ancho fijo del formulario */
+  text-align: center; /* Centra el contenido del texto */
+}
+
+/* Estilos para el título */
+h1 {
+  color: white; /* Texto blanco */
+  font-size: 24px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Separación inferior */
+}
+
+/* Contenedor de cada grupo de entrada */
+.input-group {
+  display: flex; /* Utiliza flexbox */
+  flex-direction: column; /* Organiza verticalmente label e input */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  gap: 8px; /* Espacio entre el label y el input */
+  margin-bottom: 15px; /* Separación entre grupos */
+}
+
+/* Estilos para los labels */
+.input-group label {
+  color: white; /* Color del texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+/* Estilos para los campos de entrada */
+.full-width-input {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  font-size: 16px; /* Tamaño del texto */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button {
+  width: 50%; /* Ancho del botón, relativo al contenedor */
+  padding: 10px; /* Espaciado interno */
+  background-color: #ff7300; /* Color de fondo naranja */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al pasar por encima */
+  font-size: 16px; /* Tamaño del texto */
+  margin-top: 10px; /* Separación superior */
+  box-sizing: border-box; /* Incluye borde y padding en el ancho */
+}
+
+/* Cambio de color cuando el usuario pasa el cursor sobre el botón */
+.login-button:hover {
+  background-color: #e66400; /* Color más oscuro al hacer hover */
+}
+
+/* Contenedor de opciones (olvidé mi contraseña / crear cuenta) */
+.options {
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Espacia los elementos a los extremos */
+  margin-top: 10px; /* Separación superior */
+}
+
+/* Estilos para los enlaces de opciones */
+.options a {
+  color: white; /* Color del texto blanco */
+  font-size: 12px; /* Tamaño del texto pequeño */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.options a:hover {
+  text-decoration: underline; /* Subraya el enlace al hacer hover */
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+  color: red; /* Color rojo para indicar error */
+  font-size: 14px; /* Tamaño del texto */
+  margin-top: 5px; /* Separación superior */
+}
